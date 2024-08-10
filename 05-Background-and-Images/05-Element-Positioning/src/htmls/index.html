@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/styles.css" />
+  </head>
+  <body>
+    <div class="text-2xl font-bold">Absolute Positioning </div>
+     
+    <!-- Element Positioning -->
+ <!-- top, bottom, left,right -->
+
+<div class="relative bg-red-200 size-28 m-4">
+  <div class="absolute bg-red-500 p-2 text-white size-10 top-0 left-0"> TL</div>
+  <div class="absolute bg-red-500 p-2 text-white size-10 bottom-0 left-0"> BL</div>
+  <div class="absolute bg-red-500 p-2 text-white size-10 top-0 right-0"> TR</div>
+  <div class="absolute bg-red-500 p-2 text-white size-10 bottom-0 right-0"> BR</div>
+</div>
+
+
+<div class="relative bg-red-200 size-28 m-4">
+  <div class="absolute bg-red-500 p-2 text-white  top-1 left-1 bottom-1 right-1 "> TL,TR,BT,BR</div>
+</div>
+
+
+<!-- INSET -->   
+<!--SIDES:  inset |x|y|[px,0.5-3.5, 4-12,12-20, 20-64,64-96, /2,/3,/4,/5,/6,/12, full] -->
+<div class="relative bg-red-200 size-28 m-4">
+  <div class="absolute bg-red-500 p-2 text-white inset-1 "> inset-1</div>
+</div>
+
+<!-- inset x horizontal top  (L/R) -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white  inset-x-2   ">inset-x-2</div>
+</div>
+<!-- inset x horizontal bottom  (L/R) -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white  inset-x-2 bottom-2   ">inset-x-2 bt2</div>
+</div>
+
+
+<!-- inset y vertical (T/B) -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white  inset-y-0    ">y-2</div>
+</div>
+
+<!-- inset y vertical right (T/B) -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white  inset-y-0 right-2    ">y-2 r2</div>
+</div>
+
+
+<!-- inset negative -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white -inset-3    ">-inset </div>
+</div> 
+
+
+<!-- inset negative animated -->
+<div class="relative bg-red-200 size-28 m-4">
+<div class="absolute bg-red-500  text-white inset-3 hover:-inset-2 hover:opacity-50 duration-500   ">-inset </div>
+</div> 
+ 
+    
+  </body>
+</html>

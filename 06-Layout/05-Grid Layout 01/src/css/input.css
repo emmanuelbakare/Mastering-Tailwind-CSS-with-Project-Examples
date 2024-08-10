@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grider{
+    @apply px-3 py-1 rounded-lg p-1 text-center text-black
+}

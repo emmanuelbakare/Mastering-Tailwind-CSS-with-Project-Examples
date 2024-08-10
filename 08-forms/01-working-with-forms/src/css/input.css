@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-control {
+    @apply border rounded-lg px-2 py-3 mb-5 w-full focus:outline-dashed focus:border-0 focus:outline-slate-300 placeholder:text-slate-400
+}

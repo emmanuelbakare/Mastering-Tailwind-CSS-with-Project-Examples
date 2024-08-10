@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+  <div class="text-3xl font-bold underline">Borders :<span class="text-lg">(border, outline,ring, divide)</div>
+    <!--border-[x,y,s,e,t,b,l,r]-[0,1,2,4,8,] -->
+    
+    <div class="text-3xl border-8 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+ 
+    <div class="text-2xl outline ">Lorem ipsum dolor sit amet.</div>
+    <!--Border types = [border, outline, ring, divide], Effects=[width,style,color]-->
+   
+    <!-- Line Width -->
+   <!-- border|outline|ring|divide-[x,y,s,e,t,b,l,r]- [0,1,2,4,8,] -->
+   <div class="text-2xl border-4 m-4 p-3">Border- Lorem ipsum dolor sit amet.</div>
+   <div class="text-2xl outline outline-4 m-4 p-3">Outline- Lorem ipsum dolor sit amet.</div>
+   <div class="text-2xl   ring-4 m-4 p-3">Ring- Lorem ipsum dolor sit amet.</div>
+   
+   <!-- Divide -->
+   <ul class="divide-y-8">
+     <li>item 1</li>
+     <li>item 2</li>
+     <li>item 3</li>
+     <li>item 4</li>
+   </ul>
+   
+   <p class="divide-x-4">
+       <span class="ml-5 pl-5">item 1</span>
+       <span class="ml-5 pl-5">item 2</span>
+       <span class="ml-5 pl-5">item 3</span>
+       <span class="ml-5 pl-5">item 4</span>
+   </p>
+
+ 
+    <!-- border|outline|ring|divide-[black,white,<color>]-[50-950]-->
+        
+        <!-- Border Color-->
+        <div class="text-2xl border-4 border-red-500 mb-5">Lorem ipsum dolor sit amet.</div>
+        <!-- outline Color-->
+        <div class="text-2xl outline outline-blue-500 mb-5">Lorem ipsum dolor sit amet.</div>
+        <!-- ring Color-->
+        <div class="text-2xl ring ring-blue-500">Lorem ipsum dolor sit amet.</div>
+        <!-- divide Color-->
+        <ul class="divide-y-8 divide-orange-500">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+        </ul>
+      
+      <!-- Line Style -->
+      <!--border|outline|ring|divide-[solid,dashed,dotted,double, none, hidden] -->
+      
+      <!-- Border Style-->
+      <div class="text-2xl m-3 border-4 border-red-500 border-double">Lorem ipsum dolor sit amet.</div>
+      <!-- outline Style-->
+      <div class="text-2xl m-3 outline-dotted outline-4 outline-red-500 ">Lorem ipsum dolor sit amet.</div>
+      <!-- ring Style-->
+      <div class="text-2xl m-3 ring-dotted ring-4 ring-red-500 ">Lorem ipsum dolor sit amet.</div>
+       <!-- divide Style-->
+        <ul class="divide-y-8 divide-dashed divide-orange-500">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+        </ul>
+<!-- =============================================================================== -->
+<!-- BORDER OUTLINE RING DIFFERENCE START -->
+<!-- =============================================================================== -->
+   
+<!-- Different Between Border, outline, and Ring   -->
+<div class="text-2xl m-4 p-3
+border-4 border-red-500 
+outline outline-4 outline-red-300 outline-offset-2
+ring-4 ring-red-700 ring-offset-8 ring-offset-cyan-500
+">Different Between Border, outline, and Ring </div>
+
+<!-- =============================================================================== -->
+<!-- START- END LOGICAL PROPERTIES  START -->
+<!-- =============================================================================== -->
+
+<!-- Logical Properties (S, E ) -->
+<div dir="ltr">
+  <div class="border-s-4 border-red-500 text-2xl p-4 m-4">English - Lorem ipsum dolor sit amet.</div>
+</div>
+<div dir="rtl">
+  <div class="border-s-4 border-red-500 text-2xl p-4 m-4">Arabic - Lorem ipsum dolor sit amet.</div>
+</div>
+
+
+<!-- =============================================================================== -->
+<!-- START- END LOGICAL PROPERTIES  START -->
+<!-- =============================================================================== -->
+
+
+
+<!--Rounded Edges -  (border|outline|ring)-->
+        <!--rounded-[s,e,t,r,l,b,ss,se,ee,es,tl,tr,br,bl]-[none,sm,md,lg,xl,2xl,3xl, full]-->
+        
+        <div class="text-lg m-5 p-3 
+        border-4 border-green-500
+        rounded-full">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti laudantium aspernatur pariatur veritatis veniam. Voluptate quam impedit asperiores assumenda hic. Atque aspernatur quis magni nihil facere corporis necessitatibus illum modi.</div>
+        
+        <span class="m-3 p-4 border-4   rounded-full">Lorem.</span>
+        
+        
+        <div class="m-3 p-4 border-4 border-green-400 mt-10
+         rounded-br-2xl rounded-tl-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, labore perferendis at ipsum, dolorem voluptas, dolores ea impedit dolorum ad praesentium ipsam itaque iusto? Quisquam ex eaque aliquid doloremque officiis, quos, nam nihil deserunt rem perspiciatis quam tenetur error esse!</div>
+<!-- =============================================================================== -->
+<!-- ROUNDED EDGES END -->
+<!-- =============================================================================== -->
+
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <!--  p|m-[x,y,t,r,l,b,s,e|px]-[0.5-3,4-96] -->
+    <div class="text-3xl font-bold underline">Padding:</div>
+    <div class="text-3xl border-4 pr-4">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 p-px">Lorem ipsum dolor sit amet.</div>
+    <br/><br/><br/>
+    <div class="text-3xl font-bold underline">Margin:</div>
+    <div class="text-3xl border-4 mb-3">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 m-2">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 m-px">Lorem ipsum dolor sit amet.</div>
+
+</body>
+</html>

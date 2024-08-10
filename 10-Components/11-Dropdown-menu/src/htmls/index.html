@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down menu</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body class="">
+    <!-- Main Container -->
+    <div class="flex justify-center items-center min-h-screen bg-blue-50">
+
+            <!-- menu container -->
+            <div class="border w-[200px] rounded-xl relative">
+                <a onclick="toggleMenu()" href="#"  class="flex items-center justify-between px-5 py-3 bg-white dark:bg-gray-700 rounded-xl font-semibold group " >
+                    <span class="text-gray-500 group-hover:text-black dark:text-white dark:group-hover:text-gray-200">Products</span>
+                    <svg class="w-6 h-6 text-gray-500 group-hover:text-black  dark:text-white dark:group-hover:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                      </svg>
+                </a>
+
+                <!-- Drop Down Menu -->
+                <ul id="menuitems" class="absolute top-[50px] z-20 w-full shadow-lg bg-white rounded-b-xl text-gray-500 dark:bg-gray-700 opacity-0">
+                    <li><a href="#" class="block p-3 border-b hover:bg-gray-200 hover:rounded-2xl hover:mx-2 dark:text-white dark:hover:text-black duration-700">Machine</a></li>
+                    <li><a href="#" class="block p-3 border-b hover:bg-gray-200 hover:rounded-2xl hover:mx-2 dark:text-white dark:hover:text-black duration-700">Engines</a></li>
+                    <li><a href="#" class="block p-3 border-b hover:bg-gray-200 hover:rounded-2xl hover:mx-2 dark:text-white dark:hover:text-black duration-700">Turbo</a></li>
+                    <li><a href="#" class="block p-3 border-b hover:bg-gray-200 hover:rounded-2xl hover:mx-2 dark:text-white dark:hover:text-black duration-700">Screws</a></li>
+                </ul>
+            </div>
+
+    </div>
+
+    <script>
+        function toggleMenu(){
+            menuitem = document.querySelector("#menuitems")
+
+            menuitem.classList.toggle('opacity-0')
+            menuitem.classList.toggle('duration-700')
+        }
+    </script>
+</body>
+</html>

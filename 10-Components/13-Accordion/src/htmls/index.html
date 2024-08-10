@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Section </title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body>
+    <!-- <div class="text-3xl font-bold">Accordion </div> -->
+
+    <!-- Main Component -->
+    <div class="flex flex-col items-center justify-center min-h-screen bg-blue-50 space-y-7">
+
+            <div class="text-3xl font-bold"> FAQ Section</div>
+
+            <!-- Accordion Component -->
+            <div class="border rounded-xl bg-white p-5 w-[500px] md:w-[700px] duration-500">
+
+                <!-- Question 1 -->
+                    <div name="questionContainer" onclick="toggleAnswer(this)" class="flex flex-col p-3 hover:bg-zinc-100 rounded-lg border-b cursor-pointer">
+                        <!-- Question Text and Icon -->
+                        <div class="flex items-center justify-between group"> 
+                            <h3 class="font-bold">Question 1</h3>
+                            <div class="group-hover:bg-gray-500 group-hover: rounded-full">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
+                                  </svg>
+                            </div>
+                        </div>
+
+                        <!-- Answer -->
+                        <div name="answer" class="p-3 rounded-b-lg mt-2 hidden"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facilis esse unde non hic vero iure ut explicabo, neque exercitationem!  </div>
+                    </div>
+                <!-- Question 2 -->
+                <div name="questionContainer" onclick="toggleAnswer(this)" class="flex flex-col p-3 hover:bg-zinc-100 rounded-lg border-b cursor-pointer">
+                    <!-- Question Text and Icon -->
+                    <div class="flex items-center justify-between group"> 
+                        <h3 class="font-bold">Question 2</h3>
+                        <div class="group-hover:bg-gray-500 group-hover: rounded-full">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
+                              </svg>
+                        </div>
+                    </div>
+
+                    <!-- Answer -->
+                    <div name="answer" class="p-3 rounded-b-lg mt-2  hidden">  
+                        <div class="flex items-center space-x-4">
+                            <img src="../images/8.jpg" alt="" class="size-20 bg-cover rounded-full border-2 border-white">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum eaque quas porro est quia in magnam eligendi aliquam iste?</p>
+                        </div>    
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div name="questionContainer" onclick="toggleAnswer(this)" class="flex flex-col p-3 hover:bg-zinc-100 rounded-lg border-b cursor-pointer">
+                    <!-- Question Text and Icon -->
+                    <div class="flex items-center justify-between group"> 
+                        <h3 class="font-bold">Question 3</h3>
+                        <div class="group-hover:bg-gray-500 group-hover: rounded-full">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
+                              </svg>
+                        </div>
+                    </div>
+
+                    <!-- Answer -->
+                    <div name="answer" class="p-3 rounded-b-lg mt-2 ">  
+                        <h3 class="font-bold text-lg">Heading 3</h3>    
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nisi soluta illo, perspiciatis est quam alias commodi animi quod itaque!</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+   
+         
+    
+    <script>
+        function toggleAnswer(element){
+            const answer = element.querySelector('[name="answer"]')
+            answer.classList.toggle('hidden')
+        }
+    </script>
+
+     
+     
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body>
+<!-- Horizontal Alignment -->
+<!-- justify-item [start|center|end|stretch]  -->
+<!-- <ul class="grid grid-cols-3 justify-items-start  " >
+    <li class="grider bg-red-300">01</li>
+    <li class="grider bg-blue-300">02</li>
+    <li class="grider bg-green-500">03</li>
+    <li class="grider bg-purple-300">04</li>
+    <li class="grider bg-orange-300">05</li>
+    <li class="grider bg-zinc-300">06</li>
+    <li class="grider bg-yellow-300">07</li>
+    <li class="grider bg-cyan-300">08</li>
+    <li class="grider bg-orange-200">09</li>
+  </ul> -->
+
+<!-- Vertical Alignment -->
+<!-- item [start|center|end|stretch]  -->
+<!-- <ul class="grid grid-cols-3 min-h-screen items-start  " >
+    <li class="grider bg-red-300">01</li>
+    <li class="grider bg-blue-300">02</li>
+    <li class="grider bg-green-500">03</li>
+    <li class="grider bg-purple-300">04</li>
+    <li class="grider bg-orange-300">05</li>
+    <li class="grider bg-zinc-300">06</li>
+    <li class="grider bg-yellow-300">07</li>
+    <li class="grider bg-cyan-300">08</li>
+    <li class="grider bg-orange-200">09</li>
+  </ul> -->
+
+<!-- Content Alignment -->
+<!-- content- [start|center|end|between|around|evenly| baseline|stretch]  -->
+<!-- <ul class="grid min-h-screen grid-cols-3 content-start">
+  <li class="grider bg-red-300">01</li>
+  <li class="grider bg-blue-300">02</li>
+  <li class="grider bg-green-500">03</li>
+  <li class="grider bg-purple-300">04</li>
+  <li class="grider bg-orange-300">05</li>
+  <li class="grider bg-zinc-300">06</li>
+  <li class="grider bg-yellow-300">07</li>
+  <li class="grider bg-cyan-300">08</li>
+  <li class="grider bg-orange-200">09</li>
+</ul> -->
+
+
+<!-- Place items (combines justify-items-* and items-* together) -->
+<!-- place items[start|center|end] -->
+<!-- <ul class="grid grid-cols-3 min-h-screen place-items-stretch " >
+    <li class="grider bg-red-300">01</li>
+    <li class="grider bg-blue-300">02</li>
+    <li class="grider bg-green-500">03</li>
+    <li class="grider bg-purple-300">04</li>
+    <li class="grider bg-orange-300">05</li>
+    <li class="grider bg-zinc-300">06</li>
+    <li class="grider bg-yellow-300">07</li>
+    <li class="grider bg-cyan-300 col-end-3">08</li>
+    <li class="grider bg-orange-200">09</li>
+  </ul> -->
+
+<!-- Place content (combines justify-content-* and content-* together) -->
+<!-- place-content-[start|center|end|between|evenly|around|baseline|stretch] -->
+<!-- <ul class="grid grid-cols-3 min-h-screen place-content-stretch " >
+    <li class="grider bg-red-300">01</li>
+    <li class="grider bg-blue-300">02</li>
+    <li class="grider bg-green-500">03</li>
+    <li class="grider bg-purple-300">04</li>
+    <li class="grider bg-orange-300">05</li>
+    <li class="grider bg-zinc-300">06</li>
+    <li class="grider bg-yellow-300">07</li>
+    <li class="grider bg-cyan-300 col-end-3">08</li>
+    <li class="grider bg-orange-200">09</li>
+  </ul> -->
+
+<!-- ALIGNING INDIVIDUAL ITEM WITH self-* -->
+<!-- self-*[start|center|end|stretch]   (Vertical Placements) -->
+<!-- justify-self-*[start|center|end|stretch] (Horizontal Placements) -->
+<!-- place-self-*[start|center|end|stretch]  (Vertical and Horizontal Placements) -->
+
+<!-- <ul class="grid grid-cols-3 min-h-screen  " >
+    <li class="grider bg-red-300 self-end">01</li>
+    <li class="grider bg-blue-300 justify-self-end">02</li>
+    <li class="grider bg-green-500 place-self-end">03</li>
+    <li class="grider bg-purple-300 place-self-start justify-self-end">04</li>
+    <li class="grider bg-orange-300 place-self-end justify-self-start ">05</li>
+    <li class="grider bg-zinc-300">06</li>
+    <li class="grider bg-yellow-300">07</li>
+    <li class="grider bg-cyan-300">08</li>
+    <li class="grider bg-orange-200 ">09</li>-
+  </ul> -->
+
+<!-- Example Implementation -->
+<ul class="grid grid-cols-3 min-h-screen place-content-stretch " >
+    <li class="grider bg-red-300 place-self-end">01</li>
+    <li class="grider bg-blue-300 self-end">02</li>
+    <li class="grider bg-green-500 place-self-end justify-self-start">03</li>
+    <li class="grider bg-purple-300 justify-self-end">04</li>
+    <li class="grider bg-orange-300 place-self-center ">05</li>
+    <li class="grider bg-zinc-300 justify-self-start ">06</li>
+    <li class="grider bg-yellow-300 place-self-start justify-self-end ">07</li>
+    <li class="grider bg-cyan-300 self-start">08</li>
+    <li class="grider bg-orange-200 place-self-start">09</li>
+  </ul>
+
+    
+</body>
+</html>

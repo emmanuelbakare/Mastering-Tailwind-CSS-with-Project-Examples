@@ -1,0 +1,7 @@
+{
+    "name": "01-introduction",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "tailwindcss -i ./src/css/input.css -o ./src/dist/styles.css --config ./tailwind.config.js --watch"
+    }
+  }

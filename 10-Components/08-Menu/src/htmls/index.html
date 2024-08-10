@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body class="bg-orange-50">
+    <nav class="bg-white p-5 shadow flex items-center justify-between relative">
+        <!-- Logo -->
+        <div  >
+            <span class="flex items-center text-xl text-orange-800 ">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
+                  Horizontal
+            </span>
+        </div>
+        <!-- Main menu -->
+        <ul id="mainmenu" class="text-black flex flex-col md:flex-row  space-y-5 md:space-y-0 md:space-x-4
+         absolute top-[70px] md:static p-4  left-0 bg-white w-full shadow md:shadow-none rounded-b-xl md:w-auto md:opacity-100 opacity-0 ">
+            <li class="group"><a href="" class="group-hover:text-orange-500">Home</a></li>
+            <li class="group"><a href="" class="group-hover:text-orange-500">Service</a></li>
+            <li class="group"><a href="" class="group-hover:text-orange-500">products</a></li>
+            <li class="group"><a href="" class="group-hover:text-orange-500">Contacts</a></li>
+            <li>
+                <button class="border border-orange-700 rounded px-1 py-2 md:py-0  w-full  text-sm hover:text-orange-700 hover:bg-red-50">Explorer</button>
+            </li>
+        </ul>
+
+        <!-- Menu icon -->
+        <div id="menuicon" class="md:hidden cursor-pointer" onclick="menuToggle()">
+            <svg class="w-6 h-6 text-orange-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+            </svg>
+        </div>
+
+        <!-- Close Icon -->
+        <div id="closeicon" class="md:hidden hidden cursor-pointer" onclick="menuToggle()">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+              </svg>
+        </div>
+        
+    </nav>
+     <script>
+
+        function menuToggle(){
+            var menuIcon = document.getElementById("menuicon")
+            var mainMenu = document.getElementById("mainmenu")
+            var closeIcon = document.getElementById("closeicon")
+            
+
+            mainMenu.classList.toggle('opacity-0')
+            mainMenu.classList.toggle('duration-700')
+            closeIcon.classList.toggle('hidden')
+            menuIcon.classList.toggle('hidden')
+
+        
+            
+        }
+     </script>
+</body>
+</html>

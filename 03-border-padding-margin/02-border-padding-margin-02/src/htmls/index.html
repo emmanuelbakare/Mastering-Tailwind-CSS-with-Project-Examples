@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+  <div class="text-3xl font-bold underline">Borders :<span class="text-lg">(border, outline,ring, divide)</div>
+    <!--border-[x,y,s,e,t,b,l,r]-[0,1,2,4,8,] -->
+    
+    <div class="text-3xl border-8 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+<!-- =============================================================================== -->
+<!-- LINE PADDING MARGIN 2 START -->
+<!-- =============================================================================== -->
+    <div class="text-2xl outline ">Lorem ipsum dolor sit amet.</div>
+    <!--Border types = [border, outline, ring, divide], Effects=[width,style,color]-->
+   
+    <!-- Line Width -->
+   <!-- border|outline|ring|divide-[x,y,s,e,t,b,l,r]- [0,1,2,4,8,] -->
+   <div class="text-2xl border-4 m-4 p-3">Border- Lorem ipsum dolor sit amet.</div>
+   <div class="text-2xl outline outline-4 m-4 p-3">Outline- Lorem ipsum dolor sit amet.</div>
+   <div class="text-2xl   ring-4 m-4 p-3">Ring- Lorem ipsum dolor sit amet.</div>
+   
+   <!-- Divide -->
+   <ul class="divide-y-8">
+     <li>item 1</li>
+     <li>item 2</li>
+     <li>item 3</li>
+     <li>item 4</li>
+   </ul>
+   
+   <p class="divide-x-4">
+       <span class="ml-5 pl-5">item 1</span>
+       <span class="ml-5 pl-5">item 2</span>
+       <span class="ml-5 pl-5">item 3</span>
+       <span class="ml-5 pl-5">item 4</span>
+   </p>
+
+<!-- =============================================================================== -->
+<!-- LINE PADDING MARGIN 2 END -->
+<!-- =============================================================================== -->
+   
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <!--  p|m-[x,y,t,r,l,b,s,e|px]-[0.5-3,4-96] -->
+    <div class="text-3xl font-bold underline">Padding:</div>
+    <div class="text-3xl border-4 pr-4">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 p-px">Lorem ipsum dolor sit amet.</div>
+    <br/><br/><br/>
+    <div class="text-3xl font-bold underline">Margin:</div>
+    <div class="text-3xl border-4 mb-3">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 m-2">Lorem ipsum dolor sit amet.</div>
+    <div class="text-3xl border-4 m-px">Lorem ipsum dolor sit amet.</div>
+
+</body>
+</html>

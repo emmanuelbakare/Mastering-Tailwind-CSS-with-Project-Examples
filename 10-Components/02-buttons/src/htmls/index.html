@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body>
+    <div class="text-5xl font-bold text-center">Buttons</div>
+ 
+    <div class="center flex-col space-y-6">
+       <!-- Basic Button  -->
+       <h2 class="text-2xl font-semibold">Button 1: Basic Button</h2>
+       <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700">Basic Button</button>
+    
+       <!-- Outline Button  -->
+        <h2 class="text-2xl font-semibold">Button 2: Outline Button</h2>
+          <button class="border border-blue-500 font-bold py-2 px-4 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-blue-50">Outline Button</button>
+    
+       <!-- Gradient Button    -->
+       <h2 class="text-2xl font-semibold">Button 3: Gradient Button</h2>
+       <button class="font-bold py-2 px-4 rounded-lg bg-gradient-to-b from-gray-100 to-gray-500 text-gray-50  hover:opacity-80"> Gradient 1</button>
+    
+       <button class="font-bold py-2 px-4 rounded-lg bg-gradient-to-b from-gray-50 via-gray-400 to-gray-50 border-2  hover:opacity-70"> Gradient 2</button>
+       
+    
+       <!-- Icon  Button    -->
+       <h2 class="text-2xl font-semibold">Button 4: Icon Button</h2>
+       <button class=" flex items-center font-bold py-2 px-4 rounded bg-red-500 text-white hover:bg-red-700 ">
+         <svg class="size-4 mr-2"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18m-6-6l6 6-6 6"></path>
+           </svg>
+        Icon Button
+    
+       </button>
+       
+    
+         <!-- Shadow Buttons-->
+         <h2 class="text-2xl font-semibold">Button 5: Shadow Button </h2>
+         <button class="font-bold py-2 px-5 rounded-lg border shadow-lg hover:shadow">Shadow Buttons</button>
+    
+         <button class="font-bold py-2 px-5 rounded-lg border relative group">Shadow Buttons
+           <div class="absolute bg-gray-400 h-3 -bottom-[20px] w-10/12 blur-[7px] group-hover:bottom-0 group-hover:opacity-0 duration-500"></div>
+         </button>
+    
+         <div class="border rounded-lg p-7 m-7 shadow-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus doloremque aspernatur ab quos ratione id, facilis deserunt explicabo fugiat repudiandae enim quasi soluta alias nisi, ipsam tempore pariatur! Aliquid, excepturi quaerat! Corrupti, sit necessitatibus ipsam reprehenderit itaque molestiae illo consectetur veritatis eaque velit commodi voluptas rem adipisci quo numquam.
+    
+           <div class="mt-5 flex space-x-6">
+              <button class="bg-orange-400 font-bold py-2 px-5 rounded-lg border relative group w-full">Shadow Buttons
+           <div class="absolute  h-3 -bottom-[20px] w-10/12 blur-[7px] group-hover:bottom-0 group-hover:opacity-0 duration-500 bg-orange-700"></div>
+         </button>
+          <button class="bg-orange-400 font-bold py-2 px-5 rounded-lg border relative group w-full">Shadow Buttons
+           <div class="absolute  h-3 -bottom-[20px] w-10/12 blur-[7px] group-hover:bottom-0 group-hover:opacity-0 duration-500 bg-orange-700"></div>
+         </button>
+           </div>
+         </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       </div>    
+
+    
+</body>
+</html>
