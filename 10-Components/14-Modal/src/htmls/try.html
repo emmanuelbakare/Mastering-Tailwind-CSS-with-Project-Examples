@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="../dist/styles">
+    <title>Modal Dialog 2</title>
+     <link rel="stylesheet" href="../dist/styles.css">
 </head>
 <body>
 
+    <!-- Content Body -->
+     <div class="bg-blue-100 min-h-screen border-2 flex flex-col justify-center items-center space-y-3"> 
+        <div class="grid md:grid-cols-2 gap-2">
+            <div class="p-4 bg-white rounded-lg">
+                <h1 class="text-3xl font-bold">Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ex quia minima exercitationem iste autem.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg">
+                <h1 class="text-3xl font-bold">Heading 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusamus excepturi ipsum distinctio fugiat illum.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg">
+                <h1 class="text-3xl font-bold">Heading 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ex quia minima exercitationem iste autem.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg">
+                <h1 class="text-3xl font-bold">Heading 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ex quia minima exercitationem iste autem.</p>
+            </div>
+
+        </div>
+        <button onclick="openDialog()" class="px-4 py-2 w-full bg-blue-700 text-white rounded-lg">Open Modal</button>
+    </div>
+    
+    <!-- Modal Container  -->
+    
+    <div id="modals" class="hidden absolute bg-gray-500/50 inset-0 backdrop-blur-sm ">
+        <div class="flex flex-col space-y-2 justify-center items-center h-screen mx-10 w-5/6 ">
+            <div class="w-5/6 space-y-4">
+                <div class="bg-white p-5 rounded-xl ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et dolores officiis, id voluptatibus corrupti cupiditate quas minima ducimus sint facere magni pariatur, voluptate eius maiores modi ab laboriosam. A.
+                </div>
+                <button onclick="openDialog()" class="px-4 py-2 w-full bg-orange-700 text-white rounded-lg">Close Modal</button>
+            </div>
+             
+         </div>
+    </div>
+
+    <script>
+        function openDialog(){
+            modal = document.getElementById("modals")
+            modal.classList.toggle('hidden')
+        }
+    </script>
 
 </body>
 </html>
