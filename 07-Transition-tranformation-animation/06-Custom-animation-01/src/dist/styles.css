@@ -585,7 +585,7 @@ video {
 
 @keyframes rotator {
   0%, 100% {
-    tranform: rotate(0deg) translateX(0);
+    transform: rotate(0deg) translateX(0);
   }
 
   50% {
